@@ -1,14 +1,12 @@
 .icon {
   padding: 0 14px;
 }
-.spacer {
-  flex: 1 1 auto;
-}
+
 
 .logoTopo{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-end;
 }
 
@@ -17,11 +15,32 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
   font-weight: 200;
 }
 
-.fontHeader{
-  font-weight: 300;
-  font-size: 18px;
+.icones{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
+
+.icon{
+padding-left: 5px;
+}
+
+.notification{
+  margin-right: 15px;
+
+}
+
+.topoGeral{
+  display: flex;
+  justify-content: space-between;
+}
+.login{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
