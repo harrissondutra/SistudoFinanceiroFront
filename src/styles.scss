@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$my-primary: mat.define-palette(mat.$red-palette, 600);
+$my-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+$my-theme: mat.define-light-theme((
+ color: (
+   primary: $my-primary,
+   accent: $my-accent,
+ )
+));
+
+@include mat.all-component-themes($my-theme);
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+snack-bar-container.mat-snack-bar-container {
+  color: #ffffff !important;
+  background-color: rgb(9, 161, 32) !important;
+  border: ridge  2px ;
+  font-weight: 500;
+  border-color: #ffffff !important;
+}
+
+div.mat-simple-snackbar-action {
+  color: rgb(255, 255, 255) !important;
+}
+/*
+.cardTopo{
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(240, 240, 240);
+}
+
+.Userform {
+  display:block;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.componente{
+  width:100%;
+  min-width: 10%;
+  max-height: 80%;
+  max-width: 80%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ */
+
+

@@ -1,0 +1,27 @@
+.icon {
+  padding: 0 14px;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+
+.logoTopo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.TextoTopo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 200;
+}
+
+.fontHeader{
+  font-weight: 300;
+  font-size: 18px;
+}
