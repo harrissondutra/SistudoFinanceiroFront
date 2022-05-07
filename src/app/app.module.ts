@@ -16,10 +16,13 @@ import { MatMenuModule } from '@angular/material/menu';
 import { HomeComponent } from './views/home/home.component';
 import { UserAddComponent } from './views/user/user-add/user-add.component';
 import { UserEditComponent } from './views/user/user-edit/user-edit.component';
-import { CoursesAddComponent } from './views/courses/courses-add/courses-add.component';
-import { CoursesEditComponent } from './views/courses/courses-edit/courses-edit.component';
-import { CategoriesComponent } from './views/courses/categories/categories.component';
-import { SubCategoriesComponent } from './views/courses/sub-categories/sub-categories.component';
+import { ContaCreateComponent } from './views/conta/conta-create/conta-create.component';
+import { ContaUpdateComponent } from './views/conta/conta-update/conta-update.component';
+import { ContaDeleteComponent } from './views/conta/conta-delete/conta-delete.component';
+import { AgenciasCreateComponent } from './views/agencias/agencias-create/agencias-create.component';
+import { AgenciasUpdateComponent } from './views/agencias/agencias-update/agencias-update.component';
+import { AgenciasDeleteComponent } from './views/agencias/agencias-delete/agencias-delete.component';
+
 
 
 
@@ -33,10 +36,12 @@ import { SubCategoriesComponent } from './views/courses/sub-categories/sub-categ
     HomeComponent,
     UserAddComponent,
     UserEditComponent,
-    CoursesAddComponent,
-    CoursesEditComponent,
-    CategoriesComponent,
-    SubCategoriesComponent
+    ContaCreateComponent,
+    ContaUpdateComponent,
+    ContaDeleteComponent,
+    AgenciasCreateComponent,
+    AgenciasUpdateComponent,
+    AgenciasDeleteComponent,
   ],
   imports: [
     BrowserModule,

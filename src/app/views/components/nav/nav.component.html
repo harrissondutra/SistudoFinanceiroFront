@@ -1,38 +1,46 @@
 <mat-drawer-container class="container" autosize>
-  <mat-drawer #drawer class="sidenav" mode="side"  opened="true">
-    <mat-nav-list class="nav-list">
-        <a mat-list-item routerLink="/">
-            <i class="material-icons">home</i>Home
-        </a>
+    <mat-drawer #drawer class="sidenav" mode="side" opened="true">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">home</i>Home
+            </a>
 
-        <a mat-list-item [matMenuTriggerFor]="menuUser">
-          <mat-menu #menuUser="matMenu">
-              <a routerLink="userCreate" mat-menu-item> Adicionar</a>
-              <a routerLink="userEdit" mat-menu-item> Alterar</a>
-          </mat-menu>
-          <i class="material-icons">person</i>Usuários
-      </a>
+            <a mat-list-item [matMenuTriggerFor]="menuUser">
+                <mat-menu #menuUser="matMenu">
+                    <a routerLink="userCreate" mat-menu-item> Adicionar</a>
+                    <a routerLink="userEdit" mat-menu-item> Atualizar</a>
+                </mat-menu>
+                <i class="material-icons">person</i>Cliente
+            </a>
 
 
-        <a mat-list-item [matMenuTriggerFor]="menu">
-            <mat-menu #menu="matMenu">
-                <a routerLink="coursesAdd" mat-menu-item> Cadastrar</a>
-                <a routerLink="coursesEdit" mat-menu-item> Alterar</a>
-                <a routerLink="categories" mat-menu-item> Categorias</a>
-                <a routerLink="subCategories" mat-menu-item> Subcategorias</a>
-            </mat-menu>
-            <i class="material-icons">trending_up</i>Cursos
-        </a>
-    </mat-nav-list>
-</mat-drawer>
+            <a mat-list-item [matMenuTriggerFor]="menu">
+                <mat-menu #menu="matMenu">
+                    <a routerLink="coursesAdd" mat-menu-item> Cadastrar</a>
+                    <a routerLink="coursesEdit" mat-menu-item> Alterar</a>
+                    <a routerLink="categories" mat-menu-item> Tipo</a>
 
-<div>
-  <button mat-icon-button (click)="drawer.toggle()">
+                </mat-menu>
+                <i class="material-icons">trending_up</i>Conta
+            </a>
+
+            <a mat-list-item [matMenuTriggerFor]="menu">
+                <mat-menu #menu="matMenu">
+                    <a routerLink="coursesAdd" mat-menu-item> Cadastrar</a>
+                    <a routerLink="coursesEdit" mat-menu-item> Alterar</a>
+
+
+                </mat-menu>
+                <i class="material-icons">trending_up</i>Agências
+            </a>
+        </mat-nav-list>
+    </mat-drawer>
+
+    <div>
+        <button mat-icon-button (click)="drawer.toggle()">
       <mat-icon>menu</mat-icon>
   </button>
-  <router-outlet></router-outlet>
-</div>
+        <router-outlet></router-outlet>
+    </div>
 
 </mat-drawer-container>
-
-
